@@ -1,15 +1,13 @@
 run_analysis <- function()
 {
-  xtest <- read.table("Wear/test/X_test.txt")
-  ytest <- read.table("Wear/test/y_test.txt") 
-  subjecttest <- read.table("Wear/test/subject_test.txt")
-  
-  xtrain <- read.table("Wear/train/X_train.txt")
-  ytrain <- read.table("Wear/train/y_train.txt") 
-  subjecttrain <- read.table("Wear/train/subject_train.txt")
-  
-  features <- read.table("Wear/features.txt")
-  activity <- read.table("Wear/activity_labels.txt")
+  xtest <- read.table("Dataset/test/X_test.txt")
+  ytest <- read.table("Dataset/test/y_test.txt") 
+  subjecttest <- read.table("Dataset/test/subject_test.txt")
+  xtrain <- read.table("Dataset/train/X_train.txt")
+  ytrain <- read.table("Dataset/train/y_train.txt") 
+  subjecttrain <- read.table("Dataset/train/subject_train.txt")
+  features <- read.table("Dataset/features.txt")
+  activity <- read.table("Datasetresult/activity_labels.txt")
   
   names(xtest) <- features[,2]
   names(xtrain) <- features[,2]

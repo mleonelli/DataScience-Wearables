@@ -2,25 +2,25 @@
 ---
 
 ###Activity [Character]
-	The activity performed during the measurement.
-	It can take one of the 6 values (activity) listed:
-		- LAYING
-		- SITTING
-		- STANDING
-		- WALKING
-		- WALKING_DOWNSTAIRS
-		- WALKING_UPSTAIRS
+The activity performed during the measurement.
+It can take one of the 6 values (activity) listed:
+- LAYING
+- SITTING
+- STANDING
+- WALKING
+- WALKING_DOWNSTAIRS
+- WALKING_UPSTAIRS
 
 ###SubjectID [Numeric]
-	The subject who performed the activity.
-	It ranges from 1 to 30. They have been divided into 2 groups for testing and training.
-	For the tidy dataset the 2 groups have been mixed again in a single dataset.
+The subject who performed the activity.
+It ranges from 1 to 30. They have been divided into 2 groups for testing and training.
+For the tidy dataset the 2 groups have been mixed again in a single dataset.
 
 ####Note 
-	*All variables below have been normalized to the range [-1, 1]
-	*Jerk signals are calculated by deriving the corresponding measures in time
-	*Magnitude is calculated as Euclidean norm of the corresponding measures
-	*FFT variables represent the application of a Fast Fourier Transform of the corresponding signals
++All variables below have been normalized to the range [-1, 1]
++Jerk signals are calculated by deriving the corresponding measures in time
++Magnitude is calculated as Euclidean norm of the corresponding measures
++FFT variables represent the application of a Fast Fourier Transform of the corresponding signals
 	
 ###BodyAccelerationMeanOnXAxis [Numeric]
 	Mean of the estimated body acceleration from the accelerometer on X axis.
