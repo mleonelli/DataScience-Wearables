@@ -1,5 +1,4 @@
 ##CodeBook
----
 
 ####Activity [Character]
 The activity performed during the measurement.
