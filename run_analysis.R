@@ -1,4 +1,4 @@
-wearclean <- function()
+run_analysis <- function()
 {
   xtest <- read.table("Wear/test/X_test.txt")
   ytest <- read.table("Wear/test/y_test.txt") 
@@ -38,13 +38,78 @@ wearclean <- function()
   data <- rbind(mtest, mtrain)
   
   library(plyr)
-  result <- ddply(data, .(Activity, SubjectID), numcolwise(mean))
+  result <- ddply(data, .(Activity, SubjectID), numcolwise(mean))[, -3]
   
   rm(mtest)
   rm(mtrain)
   rm(data)
   
-  names(result) <- gsub("tBodyAcc", "BodyAcceleration", names(result))
-  names(result) <- gsub("tGravityAcc", "GravityAcceleration", names(result))
-  names(result) <- gsub("tBodyGyro", "BodyGyroscope", names(result))
+  names(result)[3:68] = c("BodyAccelerationMeanOnXAxis", 
+                          "BodyAccelerationMeanOnYAxis",
+                          "BodyAccelerationMeanOnZAxis",
+                          "BodyAccelerationStdOnXAxis", 
+                          "BodyAccelerationStdOnYAxis",
+                          "BodyAccelerationStdOnZAxis",
+                          "GravityAccelerationMeanOnXAxis", 
+                          "GravityAccelerationMeanOnYAxis",
+                          "GravityAccelerationMeanOnZAxis",
+                          "GravityAccelerationStdOnXAxis", 
+                          "GravityAccelerationStdOnYAxis",
+                          "GravityAccelerationStdOnZAxis",
+                          "BodyAccelerationJerkMeanOnXAxis", 
+                          "BodyAccelerationJerkMeanOnYAxis",
+                          "BodyAccelerationJerkMeanOnZAxis",
+                          "BodyAccelerationJerkStdOnXAxis", 
+                          "BodyAccelerationJerkStdOnYAxis",
+                          "BodyAccelerationJerkStdOnZAxis",
+                          "BodyGyroscopeMeanOnXAxis", 
+                          "BodyGyroscopeMeanOnYAxis",
+                          "BodyGyroscopeMeanOnZAxis",
+                          "BodyGyroscopeStdOnXAxis", 
+                          "BodyGyroscopeStdOnYAxis",
+                          "BodyGyroscopeStdOnZAxis",
+                          "BodyGyroscopeJerkMeanOnXAxis", 
+                          "BodyGyroscopeJerkMeanOnYAxis",
+                          "BodyGyroscopeJerkMeanOnZAxis",
+                          "BodyGyroscopeJerkStdOnXAxis", 
+                          "BodyGyroscopeJerkStdOnYAxis",
+                          "BodyGyroscopeJerkStdOnZAxis",
+                          "BodyAccelerationMagnitudeMean",
+                          "BodyAccelerationMagnitudeStd",
+                          "GravityAccelerationMagnitudeMean",
+                          "GravityAccelerationMagnitudeStd",
+                          "BodyAccelerationJerkMegnitudeMean",
+                          "BodyAccelerationJerkMegnitudeStd",
+                          "BodyGyroscopeMagnitudeMean",
+                          "BodyGyroscopeMagnitudeStd",
+                          "BodyGyroscopeJerkMagnitudeMean",
+                          "BodyGyroscopeJerkMagnitudeStd",
+                          "FFTBodyAccelerationMeanOnXAxis", 
+                          "FFTBodyAccelerationMeanOnYAxis",
+                          "FFTBodyAccelerationMeanOnZAxis",
+                          "FFTBodyAccelerationStdOnXAxis", 
+                          "FFTBodyAccelerationStdOnYAxis",
+                          "FFTBodyAccelerationStdOnZAxis",
+                          "FFTBodyAccelerationJerkMeanOnXAxis", 
+                          "FFTBodyAccelerationJerkMeanOnYAxis",
+                          "FFTBodyAccelerationJerkMeanOnZAxis",
+                          "FFTBodyAccelerationJerkStdOnXAxis", 
+                          "FFTBodyAccelerationJerkStdOnYAxis",
+                          "FFTBodyAccelerationJerkStdOnZAxis",
+                          "FFTBodyGyroscopeMeanOnXAxis", 
+                          "FFTBodyGyroscopeMeanOnYAxis",
+                          "FFTBodyGyroscopeMeanOnZAxis",
+                          "FFTBodyGyroscopeStdOnXAxis", 
+                          "FFTBodyGyroscopeStdOnYAxis",
+                          "FFTBodyGyroscopeStdOnZAxis",
+                          "FFTBodyAccelerationMagnitudeMean",
+                          "FFTBodyAccelerationMagnitudeStd",
+                          "FFTBodyAccelerationJerkMegnitudeMean",
+                          "FFTBodyAccelerationJerkMegnitudeStd",
+                          "FFTBodyGyroscopeMagnitudeMean",
+                          "FFTBodyGyroscopeMagnitudeStd",
+                          "FFTBodyGyroscopeJerkMagnitudeMean",
+                          "FFTBodyGyroscopeJerkMagnitudeStd")
+  
+  result
 }
