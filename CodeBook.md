@@ -1,7 +1,7 @@
 ##CodeBook
 ---
 
-###Activity [Character]
+####Activity [Character]
 The activity performed during the measurement.
 It can take one of the 6 values (activity) listed:
 - LAYING
@@ -11,186 +11,186 @@ It can take one of the 6 values (activity) listed:
 - WALKING_DOWNSTAIRS
 - WALKING_UPSTAIRS
 
-###SubjectID [Numeric]
+####SubjectID [Numeric]
 The subject who performed the activity.
 It ranges from 1 to 30. They have been divided into 2 groups for testing and training.
 For the tidy dataset the 2 groups have been mixed again in a single dataset.
 
-####Note 
-+All variables below have been normalized to the range [-1, 1]
-+Jerk signals are calculated by deriving the corresponding measures in time
-+Magnitude is calculated as Euclidean norm of the corresponding measures
-+FFT variables represent the application of a Fast Fourier Transform of the corresponding signals
+#####Note 
++ All variables below have been normalized to the range [-1, 1]
++ Jerk signals are calculated by deriving the corresponding measures in time
++ Magnitude is calculated as Euclidean norm of the corresponding measures
++ FFT variables represent the application of a Fast Fourier Transform of the corresponding signals
 	
-###BodyAccelerationMeanOnXAxis [Numeric]
+####BodyAccelerationMeanOnXAxis [Numeric]
 	Mean of the estimated body acceleration from the accelerometer on X axis.
 	
-###BodyAccelerationMeanOnYAxis [Numeric]
+####BodyAccelerationMeanOnYAxis [Numeric]
 	Mean of the estimated body acceleration from the accelerometer on Y axis. 
 	
-###BodyAccelerationMeanOnZAxis [Numeric]
+####BodyAccelerationMeanOnZAxis [Numeric]
 	Mean of the estimated body acceleration from the accelerometer on Z axis.
 	
-###BodyAccelerationStdOnXAxis [Numeric]
+####BodyAccelerationStdOnXAxis [Numeric]
 	Standard deviation of the estimated body acceleration from the accelerometer on X axis.
 	
-###BodyAccelerationStdOnYAxis [Numeric]
+####BodyAccelerationStdOnYAxis [Numeric]
 	Standard deviation of the estimated body acceleration from the accelerometer on Y axis.
 	
-###BodyAccelerationStdOnZAxis [Numeric]
+####BodyAccelerationStdOnZAxis [Numeric]
 	Standard deviation of the estimated body acceleration from the accelerometer on Z axis.
 	
-###GravityAccelerationMeanOnXAxis [Numeric]
+####GravityAccelerationMeanOnXAxis [Numeric]
 	Mean of the total acceleration from the accelerometer on X axis.
 	
-###GravityAccelerationMeanOnYAxis [Numeric]
+####GravityAccelerationMeanOnYAxis [Numeric]
 	Mean of the total acceleration from the accelerometer on Y axis.
 	
-###GravityAccelerationMeanOnZAxis [Numeric]
+####GravityAccelerationMeanOnZAxis [Numeric]
 	Mean of the total acceleration from the accelerometer on Z axis.
 	
-###GravityAccelerationStdOnXAxis [Numeric]
+####GravityAccelerationStdOnXAxis [Numeric]
 	Standard deviation of the total acceleration from the accelerometer on X axis.
 	
-###GravityAccelerationStdOnYAxis [Numeric]
+####GravityAccelerationStdOnYAxis [Numeric]
 	Standard deviation of the total acceleration from the accelerometer on Y axis.
 	
-###GravityAccelerationStdOnZAxis [Numeric]
+####GravityAccelerationStdOnZAxis [Numeric]
 	Standard deviation of the total acceleration from the accelerometer on Z axis.
 	
-###BodyAccelerationJerkMeanOnXAxis [Numeric]
+####BodyAccelerationJerkMeanOnXAxis [Numeric]
 	Jerk signal of the mean of the total acceleration from the accelerometer on X axis.
 	
-###BodyAccelerationJerkMeanOnYAxis [Numeric]
+####BodyAccelerationJerkMeanOnYAxis [Numeric]
 	Jerk signal of the mean of the total acceleration from the accelerometer on Y axis.
 	
-###BodyAccelerationJerkMeanOnZAxis [Numeric]
+####BodyAccelerationJerkMeanOnZAxis [Numeric]
 	Jerk signal of the mean of the total acceleration from the accelerometer on Z axis.
 	
-###BodyAccelerationJerkStdOnXAxis [Numeric]
+####BodyAccelerationJerkStdOnXAxis [Numeric]
 	Jerk signal of the standard deviation of the total acceleration from the accelerometer on X axis.
 	
-###BodyAccelerationJerkStdOnYAxis [Numeric]
+####BodyAccelerationJerkStdOnYAxis [Numeric]
 	Jerk signal of the standard deviation of the total acceleration from the accelerometer on Y axis.
 	
-###BodyAccelerationJerkStdOnZAxis [Numeric]
+####BodyAccelerationJerkStdOnZAxis [Numeric]
 	Jerk signal of the standard deviation of the total acceleration from the accelerometer on Z axis.
 	
-###BodyGyroscopeMeanOnXAxis [Numeric]
+####BodyGyroscopeMeanOnXAxis [Numeric]
 	Mean of the body gyroscope signal on X axis.
 	
-###BodyGyroscopeMeanOnYAxis [Numeric]
+####BodyGyroscopeMeanOnYAxis [Numeric]
 	Mean of the body gyroscope signal on Y axis.
 	
-###BodyGyroscopeMeanOnZAxis [Numeric]
+####BodyGyroscopeMeanOnZAxis [Numeric]
 	Mean of the body gyroscope signal on Z axis.
 	
-###BodyGyroscopeStdOnXAxis [Numeric]
+####BodyGyroscopeStdOnXAxis [Numeric]
 	Standard deviation of the body gyroscope signal on X axis.
 	
-###BodyGyroscopeStdOnYAxis [Numeric]
+####BodyGyroscopeStdOnYAxis [Numeric]
 	Standard deviation of the body gyroscope signal on Y axis.
 	
-###BodyGyroscopeStdOnZAxis [Numeric]
+####BodyGyroscopeStdOnZAxis [Numeric]
 	Standard deviation of the body gyroscope signal on Z axis.
 	
-###BodyGyroscopeJerkMeanOnXAxis [Numeric]
+####BodyGyroscopeJerkMeanOnXAxis [Numeric]
 	Jerk signal of the mean of the body gyroscope signal on X axis.
 	
-###BodyGyroscopeJerkMeanOnYAxis [Numeric]
+####BodyGyroscopeJerkMeanOnYAxis [Numeric]
 	Jerk signal of the mean of the body gyroscope signal on Y axis.
 	
-###BodyGyroscopeJerkMeanOnZAxis [Numeric]
+####BodyGyroscopeJerkMeanOnZAxis [Numeric]
 	Jerk signal of the mean of the body gyroscope signal on Z axis.
 	
-###BodyGyroscopeJerkStdOnXAxis [Numeric]
+####BodyGyroscopeJerkStdOnXAxis [Numeric]
 	Jerk signal of the standard deviation of the body gyroscope signal on X axis.
 	
-###BodyGyroscopeJerkStdOnYAxis [Numeric]
+####BodyGyroscopeJerkStdOnYAxis [Numeric]
 	Jerk signal of the standard deviation of the body gyroscope signal on Y axis.
 	
-###BodyGyroscopeJerkStdOnZAxis [Numeric]
+####BodyGyroscopeJerkStdOnZAxis [Numeric]
 	Jerk signal of the standard deviation of the body gyroscope signal on Z axis.
 	
-###BodyAccelerationMagnitudeMean [Numeric]
+####BodyAccelerationMagnitudeMean [Numeric]
 	Magnitude of the mean of the body acceleration.
 	
-###BodyAccelerationMagnitudeStd [Numeric]
+####BodyAccelerationMagnitudeStd [Numeric]
 	Magnitude of the standard deviation of the body acceleration.
 	
-###GravityAccelerationMagnitudeMean [Numeric]
+####GravityAccelerationMagnitudeMean [Numeric]
 	Magnitude of the mean of the total acceleration.
 	
-###GravityAccelerationMagnitudeStd [Numeric]
+####GravityAccelerationMagnitudeStd [Numeric]
 	Magnitude of the standard deviation of the total acceleration.
 	
-###BodyAccelerationJerkMegnitudeMean [Numeric]
+####BodyAccelerationJerkMegnitudeMean [Numeric]
 	Magnitude of the mean of the body acceleration jerk signal.
 	
-###BodyAccelerationJerkMegnitudeStd [Numeric]
+####BodyAccelerationJerkMegnitudeStd [Numeric]
 	Magnitude of the standard deviation of the body acceleration jerk signal.
 	
-###BodyGyroscopeMagnitudeMean [Numeric]
+####BodyGyroscopeMagnitudeMean [Numeric]
 	Magnitude of the mean of the body gyroscope.
 	
-###BodyGyroscopeMagnitudeStd [Numeric]
+####BodyGyroscopeMagnitudeStd [Numeric]
 	Magnitude of the standard deviation of the body gyroscope.
 	
-###BodyGyroscopeJerkMagnitudeMean [Numeric]
+####BodyGyroscopeJerkMagnitudeMean [Numeric]
 	Magnitude of the mean of the body gyroscope jerk signal.
 	
-###BodyGyroscopeJerkMagnitudeStd [Numeric]
+####BodyGyroscopeJerkMagnitudeStd [Numeric]
 	Magnitude of the standard deviation of the body gyroscope jerk signal.
 	
-###FFTBodyAccelerationMeanOnXAxis [Numeric]
+####FFTBodyAccelerationMeanOnXAxis [Numeric]
 
-###FFTBodyAccelerationMeanOnYAxis [Numeric]
+####FFTBodyAccelerationMeanOnYAxis [Numeric]
 
-###FFTBodyAccelerationMeanOnZAxis [Numeric]
+####FFTBodyAccelerationMeanOnZAxis [Numeric]
 
-###FFTBodyAccelerationStdOnXAxis [Numeric]
+####FFTBodyAccelerationStdOnXAxis [Numeric]
 
-###FFTBodyAccelerationStdOnYAxis [Numeric]
+####FFTBodyAccelerationStdOnYAxis [Numeric]
 
-###FFTBodyAccelerationStdOnZAxis [Numeric]
+####FFTBodyAccelerationStdOnZAxis [Numeric]
 
-###FFTBodyAccelerationJerkMeanOnXAxis [Numeric]
+####FFTBodyAccelerationJerkMeanOnXAxis [Numeric]
 
-###FFTBodyAccelerationJerkMeanOnYAxis [Numeric]
+####FFTBodyAccelerationJerkMeanOnYAxis [Numeric]
 
-###FFTBodyAccelerationJerkMeanOnZAxis [Numeric]
+####FFTBodyAccelerationJerkMeanOnZAxis [Numeric]
 
-###FFTBodyAccelerationJerkStdOnXAxis [Numeric]
+####FFTBodyAccelerationJerkStdOnXAxis [Numeric]
 
-###FFTBodyAccelerationJerkStdOnYAxis [Numeric]
+####FFTBodyAccelerationJerkStdOnYAxis [Numeric]
 
-###FFTBodyAccelerationJerkStdOnZAxis [Numeric]
+####FFTBodyAccelerationJerkStdOnZAxis [Numeric]
 
-###FFTBodyGyroscopeMeanOnXAxis [Numeric]
+####FFTBodyGyroscopeMeanOnXAxis [Numeric]
 
-###FFTBodyGyroscopeMeanOnYAxis [Numeric]
+####FFTBodyGyroscopeMeanOnYAxis [Numeric]
 
-###FFTBodyGyroscopeMeanOnZAxis [Numeric]
+####FFTBodyGyroscopeMeanOnZAxis [Numeric]
 
-###FFTBodyGyroscopeStdOnXAxis [Numeric]
+####FFTBodyGyroscopeStdOnXAxis [Numeric]
 
-###FFTBodyGyroscopeStdOnYAxis [Numeric]
+####FFTBodyGyroscopeStdOnYAxis [Numeric]
 
-###FFTBodyGyroscopeStdOnZAxis [Numeric]
+####FFTBodyGyroscopeStdOnZAxis [Numeric]
 
-###FFTBodyAccelerationMagnitudeMean [Numeric]
+####FFTBodyAccelerationMagnitudeMean [Numeric]
 
-###FFTBodyAccelerationMagnitudeStd [Numeric]
+####FFTBodyAccelerationMagnitudeStd [Numeric]
 
-###FFTBodyAccelerationJerkMegnitudeMean [Numeric]
+####FFTBodyAccelerationJerkMegnitudeMean [Numeric]
 
-###FFTBodyAccelerationJerkMegnitudeStd [Numeric]
+####FFTBodyAccelerationJerkMegnitudeStd [Numeric]
 
-###FFTBodyGyroscopeMagnitudeMean [Numeric]
+####FFTBodyGyroscopeMagnitudeMean [Numeric]
 
-###FFTBodyGyroscopeMagnitudeStd [Numeric]
+####FFTBodyGyroscopeMagnitudeStd [Numeric]
 
-###FFTBodyGyroscopeJerkMagnitudeMean [Numeric]
+####FFTBodyGyroscopeJerkMagnitudeMean [Numeric]
 
-###FFTBodyGyroscopeJerkMagnitudeStd [Numeric]
+####FFTBodyGyroscopeJerkMagnitudeStd [Numeric]
 
